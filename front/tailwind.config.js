@@ -1,8 +1,14 @@
 /** @type {import('tailwindcss').Config} */
+const { nextui } = require("@nextui-org/react");
+
 export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    './app/**/*.{js,ts,jsx,tsx,mdx}', // Note the addition of the `app` directory.
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/@nextui-org/**/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -48,5 +54,7 @@ export default {
 },
   plugins: [
     require('tailwind-scrollbar-hide'),
+    // require('@nextui-org/react'),
+    nextui()
   ],
 }

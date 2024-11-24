@@ -6,3 +6,9 @@ body {
     background-color: #121212; /* или цвет вашего приложения */
   }
   
+/* Календарь DatePicker */
+.nextui-datepicker-popover {
+  background-color: white !important; /* Задание белого фона */
+  border-radius: 0.5rem; /* Скругление */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень */
+}

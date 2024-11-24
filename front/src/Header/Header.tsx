@@ -1,8 +1,8 @@
 import { FaBook } from 'react-icons/fa';
 
-export default function Header({setSideBar}) {
+export default function Header({setSideBar}:any) {
   return (
-    <header className="px-6 flex items-center justify-between fixed w-full top-0 h-16 bg-books-gray-dark border-b-2 border-books-gray-light shadow-md z-50">
+    <header className="z-20 px-6 flex items-center justify-between fixed w-full top-0 h-16 bg-books-gray-dark border-b-2 border-books-gray-light shadow-md">
       {/* Меню */}
       <button 
       onClick={setSideBar}
